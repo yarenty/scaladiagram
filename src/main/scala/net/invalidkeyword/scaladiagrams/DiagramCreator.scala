@@ -19,7 +19,12 @@ object DiagramCreator {
       val parent = opt[String]("parent", descr = "only output parents of a particular class")
     }
     
+    println("SOURCE::" + Config.source)
     val files = new InputFinder().files(Config.source(),Config.extension())
+    
+    files.foreach { f => println(f.getName)}
+    
+    println("FIELS:"+files)
     val allNodes = getNodesFromFiles(files)
     val ns = new NodeSelector(allNodes)
     
