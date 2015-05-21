@@ -1,3 +1,7 @@
+ORIGINAL: https://github.com/mikeyhu/scaladiagrams
+HERE updated version to scala 2.11
+
+
 Scala Diagrams
 ==============
 Scaladiagrams is a command line tool to generate DOT files representing a Scala projects class hierarchy. These DOT files can then be passed to a renderer
